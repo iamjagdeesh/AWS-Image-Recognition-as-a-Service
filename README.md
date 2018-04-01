@@ -18,11 +18,11 @@
 
 ### Listener
 * This application runs inside the app instances and listens for messages (requests) in the Input Queue.
-* When the message arrives, it takes the message and run the deep learning model for classification and puts the classification result into a S3 bucket. The classification result is also inserted into the Output Queue.
-* When there is no message in the Input queue, the application shuts down the instance in which its running facilitating scale in.
+* When the message arrives, it takes the message and runs the deep learning model for classification and puts the classification result into a S3 bucket. The classification result is also inserted into the Output Queue.
+* When there is no message in the Input queue, the application shuts down the instance in which its running, facilitating scale in.
 
 ### Listener Running
-* This is the same as Listener application but the instance which is running this application won't terminate itself facilitating quick response to the user.
+* This is the same as Listener application but the instance which is running this application won't terminate at all, facilitating quick response to the user.
 
 ### Instructions:-
 * HTTP Requests should be sent in the below format
